@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://wallpapers.com/images/hd/youtube-gaming-rm7am1fa6do546ri.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 5rem; /* Increased font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.status {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.Board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.square:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+}
+
+.square:active {
+  transform: scale(0.95);
+}
+
+.refresh-button {
+  margin-top: 20px; /* Added margin for spacing */
+  padding: 10px 20px; /* Added padding for better click area */
+  font-size: 20px;
+  color: white;
+  background-color: #007BFF; /* Blue background */
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.refresh-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
